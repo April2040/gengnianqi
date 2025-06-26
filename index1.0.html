@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>波普尔“三个世界”与投资理财</title>
+
+    <!-- 1. Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2. Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- 3. Framer Motion via CDN -->
+    <script type="module">
+        import { animate, stagger, timeline } from "https://cdn.framer.com/motion/framer-motion.es.js";
+
+        // 确保内容默认可见，动画作为增强体验
+        // 为卡片和关键部分添加入场动画
+        animate(
+            ".motion-card",
+            { opacity: [0, 1], y: [20, 0] },
+            { delay: stagger(0.15), duration: 0.7, ease: "easeOut" }
+        );
+        
+        animate(
+            ".motion-section",
+            { opacity: [0, 1], scale: [0.95, 1] },
+            { delay: 1.0, duration: 0.8, ease: "easeOut" }
+        )
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #1f2937; /* bg-gray-800 */
+            color: #d1d5db; /* text-gray-300 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 py-12 md:py-16">
+
+        <header class="text-center mb-12 motion-card">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
+                波普尔“三个世界”与投资实践
+            </h1>
+            <p class="mt-4 text-lg text-gray-400">在客观、主观与知识的循环中进化</p>
+        </header>
+
+        <!-- Section 1: 理论概览 -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8 text-amber-300 motion-card">理论概览：三个世界的划分</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                
+                <!-- World 1 Card -->
+                <div class="motion-card bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-amber-500 hover:shadow-amber-500/20">
+                    <i class="fas fa-server text-4xl text-amber-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white">世界 1</h3>
+                    <p class="font-bold text-gray-300 mb-2">物理与客观现实</p>
+                    <p class="text-gray-400">可度量的客观事物。如：交易所大楼、服务器、公司设备与库存。</p>
+                </div>
+
+                <!-- World 2 Card -->
+                <div class="motion-card bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-amber-500 hover:shadow-amber-500/20">
+                    <i class="fas fa-brain text-4xl text-amber-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white">世界 2</h3>
+                    <p class="font-bold text-gray-300 mb-2">主观意识与情绪</p>
+                    <p class="text-gray-400">投资者的信念、情绪、风险偏好与决策动机。</p>
+                </div>
+
+                <!-- World 3 Card -->
+                <div class="motion-card bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-700 transition-all duration-300 hover:border-amber-500 hover:shadow-amber-500/20">
+                    <i class="fas fa-book-open-reader text-4xl text-amber-400 mb-4"></i>
+                    <h3 class="text-2xl font-semibold text-white">世界 3</h3>
+                    <p class="font-bold text-gray-300 mb-2">客观化的知识与制度</p>
+                    <p class="text-gray-400">金融理论、模型、法律、算法等可交流、可批判的知识产物。</p>
+                </div>
+            </div>
+            <div class="motion-card text-center mt-8 text-gray-400 bg-gray-900/50 p-4 rounded-lg">
+                <i class="fas fa-sync-alt mr-2 text-amber-400"></i>
+                核心在于三界之间存在<strong class="text-amber-300">反馈回路</strong>，相互影响，共同演化。
+            </div>
+        </section>
+
+        <!-- Section 2: 投资映射 -->
+        <section class="mb-16 motion-section">
+            <h2 class="text-3xl font-bold text-center mb-8 text-amber-300">三界在投资中的映射</h2>
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-700 overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3">
+                    <!-- World 1 Mapping -->
+                    <div class="p-6 border-b md:border-b-0 md:border-r border-gray-700">
+                        <h4 class="font-bold text-xl text-white mb-3">世界 1: 市场与基础设施</h4>
+                        <p class="text-gray-400 mb-4"><strong class="text-gray-200">场景:</strong> 交易所、行情终端、黄金、原油等实物资产。</p>
+                        <p class="text-red-400"><i class="fas fa-exclamation-triangle mr-2"></i><strong class="text-red-300">风险:</strong> 技术宕机、流动性骤降、供应链中断。</p>
+                    </div>
+                    <!-- World 2 Mapping -->
+                    <div class="p-6 border-b md:border-b-0 md:border-r border-gray-700">
+                        <h4 class="font-bold text-xl text-white mb-3">世界 2: 投资者心理</h4>
+                        <p class="text-gray-400 mb-4"><strong class="text-gray-200">场景:</strong> 贪婪与恐惧、过度自信、从众心理。</p>
+                        <p class="text-red-400"><i class="fas fa-exclamation-triangle mr-2"></i><strong class="text-red-300">风险:</strong> 行为偏差导致“高买低卖”、错配风险。</p>
+                    </div>
+                    <!-- World 3 Mapping -->
+                    <div class="p-6">
+                        <h4 class="font-bold text-xl text-white mb-3">世界 3: 知识与制度</h4>
+                        <p class="text-gray-400 mb-4"><strong class="text-gray-200">场景:</strong> MPT/CAPM模型、证券法、AI交易算法。</p>
+                        <p class="text-red-400"><i class="fas fa-exclamation-triangle mr-2"></i><strong class="text-red-300">风险:</strong> 理论失效（黑天鹅）、监管骤变、算法滥用。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: 对投资者的启示 (Table) -->
+        <section class="mb-16 motion-section">
+            <h2 class="text-3xl font-bold text-center mb-8 text-amber-300">对投资者的启示</h2>
+            <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-700 overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-950 border-b border-gray-700">
+                        <tr>
+                            <th class="p-4 font-semibold text-white">行动维度</th>
+                            <th class="p-4 font-semibold text-white">具体做法</th>
+                            <th class="p-4 font-semibold text-white text-center">对应世界</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-700">
+                        <tr class="hover:bg-gray-800/50">
+                            <td class="p-4 font-bold text-gray-200">构建“客观-主观”双账本</td>
+                            <td class="p-4 text-gray-400">用数据面板记录仓位盈亏，同步写下当时的主观情绪与理由。</td>
+                            <td class="p-4 text-center font-mono text-amber-300">1 <i class="fas fa-arrows-alt-h mx-1"></i> 2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800/50">
+                            <td class="p-4 font-bold text-gray-200">运用“证伪思维”</td>
+                            <td class="p-4 text-gray-400">先写出认输条件，主动寻找反例与负面数据来检验投资假设。</td>
+                            <td class="p-4 text-center font-mono text-amber-300">2 <i class="fas fa-arrows-alt-h mx-1"></i> 3</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800/50">
+                            <td class="p-4 font-bold text-gray-200">动态升级知识栈</td>
+                            <td class="p-4 text-gray-400">关注最新监管、财报准则，用实时数据回测并淘汰失效模型。</td>
+                            <td class="p-4 text-center font-mono text-amber-300">3 <i class="fas fa-arrows-alt-h mx-1"></i> 1</td>
+                        </tr>
+                        <tr class="hover:bg-gray-800/50">
+                            <td class="p-4 font-bold text-gray-200">情绪风控仪表盘</td>
+                            <td class="p-4 text-gray-400">设置强制冷静期，或使用自动再平衡、止损脚本来克服情绪。</td>
+                            <td class="p-4 text-center font-mono text-amber-300">2 <i class="fas fa-arrows-alt-h mx-1"></i> 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Section 5: 结论 -->
+        <section class="motion-section">
+            <div class="bg-gradient-to-br from-gray-900 to-black p-8 rounded-xl border-2 border-amber-500/50 shadow-2xl text-center">
+                <i class="fas fa-infinity text-4xl text-amber-400 mb-4"></i>
+                <h2 class="text-3xl font-bold text-white mb-4">结论：在三界循环中进化</h2>
+                <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                    真正的投资进化，并非追求某次完美预测，而是在<strong class="text-amber-300">世界 1</strong>（敬畏市场）、<strong class="text-amber-300">世界 2</strong>（管理情绪）与<strong class="text-amber-300">世界 3</strong>（迭代理论）的循环中，不断暴露假设、修正认知、升级工具，最终形成正向反馈。
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

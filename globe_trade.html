@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度分析各国贸易策略及其长期影响的方法论</title>
+
+    <!-- 1. Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2. Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- 3. Framer Motion via CDN -->
+    <script type="module">
+        import { animate, stagger } from "https://cdn.framer.com/motion/framer-motion.es.js";
+
+        // 为内容块应用入场动画
+        animate(
+            ".motion-reveal",
+            { opacity: [0, 1], y: [20, 0] },
+            { delay: stagger(0.1), duration: 0.6, ease: "easeOut" }
+        );
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #0d1117; /* GitHub Dark Dimmed */
+            color: #c9d1d9; /* text-gray-300 */
+        }
+        .section-title {
+            @apply text-3xl font-bold text-blue-300 mb-6 border-b-2 border-blue-500/30 pb-3;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 py-12 md:py-16">
+
+        <header class="text-center mb-16 motion-reveal">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">
+                深度分析各国贸易策略及其长期影响的方法论
+            </h1>
+            <p class="mt-4 text-lg text-gray-400">一个在“贸易战+地缘政治”双重冲击下的系统性评估框架</p>
+        </header>
+
+        <div class="space-y-16">
+
+            <!-- 1. 明确分析对象与问题 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-bullseye mr-3"></i>1. 明确分析对象与问题</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><strong>选定国家/地区：</strong>中、美、欧盟、日韩、东盟等</div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><strong>划定产业/技术：</strong>半导体、EV、电池、关键矿产等</div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><strong>确定评价目标：</strong>对GDP、通胀、就业、供应链韧性的影响</div>
+                </div>
+            </section>
+
+            <!-- 2. 数据体系与来源 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-database mr-3"></i>2. 数据体系与来源</h2>
+                <div class="bg-gray-900 rounded-xl shadow-lg border border-gray-700 overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead class="bg-gray-950/50">
+                            <tr>
+                                <th class="p-4 font-semibold text-white">维度</th>
+                                <th class="p-4 font-semibold text-white">关键指标</th>
+                                <th class="p-4 font-semibold text-white">数据库/来源</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-700">
+                            <tr class="hover:bg-gray-800/50">
+                                <td class="p-3">双边贸易流</td><td class="p-3">HS 2/6 位码进出口额</td><td class="p-3">UN Comtrade, ITC Trade Map</td>
+                            </tr>
+                            <tr class="hover:bg-gray-800/50">
+                                <td class="p-3">供应链位置</td><td class="p-3">前向/后向 GVC 参与度</td><td class="p-3">OECD TiVA, ADB MRIO</td>
+                            </tr>
+                            <tr class="hover:bg-gray-800/50">
+                                <td class="p-3">制裁/限制</td><td class="p-3">SDN 名单、实体清单</td><td class="p-3">OFAC, BIS, EU 官报</td>
+                            </tr>
+                             <tr class="hover:bg-gray-800/50">
+                                <td class="p-3">技术竞争</td><td class="p-3">专利族、IC 设计份额</td><td class="p-3">PATSTAT, Gartner</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 3. 分析框架 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-sitemap mr-3"></i>3. 分析框架</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-200 mb-4">3.1 定量模型</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li><strong>Gravity Model:</strong> 估算贸易壁垒弹性</li>
+                            <li><strong>CGE/GTAP 模型:</strong> 模拟多场景对GDP的长期冲击</li>
+                            <li><strong>MRIO / TiVA 分解:</strong> 测算产业上下游依赖度</li>
+                            <li><strong>复杂网络分析:</strong> 识别供应链关键节点</li>
+                            <li><strong>事件研究:</strong> 评估政策对股价的即时影响</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-blue-200 mb-4">3.2 定性工具</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-300">
+                            <li><strong>PESTLE 分析</strong></li>
+                            <li><strong>政治经济学博弈分析</strong></li>
+                            <li><strong>Value Chain Mapping</strong></li>
+                            <li><strong>SWOT / Porter 五力分析</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. 情景设计 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-chess mr-3"></i>4. 情景设计</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><i class="fas fa-anchor mr-2"></i>基准情景</div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><i class="fas fa-arrow-up mr-2 text-red-400"></i>升级情景</div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><i class="fas fa-handshake mr-2 text-green-400"></i>缓和情景</div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><i class="fas fa-code-branch mr-2 text-yellow-400"></i>双分叉情景</div>
+                </div>
+            </section>
+            
+            <!-- 8. 战略启示 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-lightbulb mr-3"></i>8. 战略启示</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-lg text-white mb-2"><i class="fas fa-landmark mr-2 text-blue-400"></i>政策层</h4>
+                        <p class="text-gray-400">以“友岸外包+本土关键零部件”组合提升韧性；精准补贴对冲通胀。</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-lg text-white mb-2"><i class="fas fa-building mr-2 text-blue-400"></i>企业层</h4>
+                        <p class="text-gray-400">供应链“双循环”；利用RCEP/CPTPP规则；加强地缘政治风险评分。</p>
+                    </div>
+                    <div class="bg-gray-900 p-6 rounded-lg border border-gray-700">
+                        <h4 class="font-bold text-lg text-white mb-2"><i class="fas fa-chart-line mr-2 text-blue-400"></i>投资者</h4>
+                        <p class="text-gray-400">布局“去碳+去风险”交集赛道；关注“中立国”的再出口套利机会。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 9. 持续监测机制 -->
+             <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-history mr-3"></i>9. 持续监测机制</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><i class="fas fa-calendar-day mr-2"></i><strong>月度更新:</strong> 关税清单、实体清单</div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><i class="fas fa-calendar-week mr-2"></i><strong>季度滚动:</strong> GVC中断指数、运价</div>
+                    <div class="bg-gray-900 p-4 rounded-lg border border-gray-700"><i class="fas fa-calendar-check mr-2"></i><strong>年度回顾:</strong> 校正模型参数</div>
+                </div>
+            </section>
+
+            <!-- 结语 -->
+            <footer class="motion-reveal mt-16">
+                <div class="bg-gradient-to-br from-gray-900 to-black p-8 rounded-xl border-2 border-blue-500/50 shadow-2xl text-center">
+                    <i class="fas fa-check-circle text-4xl text-blue-400 mb-4"></i>
+                    <h2 class="text-3xl font-bold text-white mb-4">结语</h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        在贸易战与地缘政治长期化背景下，贸易策略分析必须同时衡量经济效率与安全诉求。本框架旨在提供一套可验证、可追踪、可迭代的深度解析方法，为各方决策提供坚实的量化支撑。
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

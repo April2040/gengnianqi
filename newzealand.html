@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新西兰国债市场与五年期保守型投资配置建议</title>
+
+    <!-- 1. Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 2. Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- 3. Framer Motion via CDN -->
+    <script type="module">
+        import { animate, stagger } from "https://cdn.framer.com/motion/framer-motion.es.js";
+
+        // 为内容块应用入场动画
+        animate(
+            ".motion-reveal",
+            { opacity: [0, 1], y: [20, 0] },
+            { delay: stagger(0.1), duration: 0.6, ease: "easeOut" }
+        );
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #f8fafc; /* bg-slate-50 */
+            color: #334155; /* text-slate-700 */
+        }
+        .section-title {
+            @apply text-3xl font-bold text-slate-800 mb-8 border-b-2 border-blue-200 pb-4;
+        }
+        .card {
+            @apply bg-white p-6 rounded-xl shadow-lg border border-slate-200;
+        }
+        .highlight {
+            @apply text-blue-600 font-bold;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 py-12 md:py-16">
+
+        <header class="text-center mb-16 motion-reveal">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-sky-600">
+                新西兰国债市场与五年期保守型投资配置建议
+            </h1>
+            <p class="mt-4 text-lg text-slate-500">一份基于当前市场环境的深度分析与资产配置方案</p>
+        </header>
+
+        <div class="space-y-16">
+
+            <!-- 1. 收益率现状核实 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-chart-bar mr-3 text-blue-500"></i>1. 收益率现状核实</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="card">
+                        <h3 class="font-bold text-lg text-slate-700">中长期名义国债</h3>
+                        <p class="mt-2 text-slate-600">近期收益率在 <span class="highlight">4.2%～4.6%</span> 区间波动，但曾突破 <span class="highlight">5%</span>，显示出市场波动性。 [1, 2]</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-bold text-lg text-slate-700">长期通胀保值国债 (IIB)</h3>
+                        <p class="mt-2 text-slate-600">实际收益率显著上升，2035年期IIB发行收益率高达 <span class="highlight">2.78%</span>，远超历史水平。 [3]</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="font-bold text-lg text-slate-700">短期国债</h3>
+                        <p class="mt-2 text-slate-600">随货币政策周期剧烈波动，近期因高通胀一度突破 <span class="highlight">5%</span>，并非稳定在特定区间。 [4, 5, 7]</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. 长期背景分析 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-globe-americas mr-3 text-blue-500"></i>2. 长期背景分析</h2>
+                <div class="space-y-8">
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-slate-700 mb-3"><i class="fas fa-wave-square mr-2"></i>全球经济金融因素</h3>
+                        <p class="text-slate-600">新西兰国债收益率与全球利率周期高度同步，在2008年金融危机和2020年新冠疫情等全球冲击下均出现剧烈变动，体现出与美联储政策和国际资本流动的强联动性。 [8, 9, 10, 11, 12, 13, 17]</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-bold text-slate-700 mb-3"><i class="fas fa-flag mr-2"></i>新西兰国内经济与债务</h3>
+                        <p class="text-slate-600">尽管政府债务因疫情从GDP的33%升至54.6%，但历史基础低，财政稳健，主权信用评级维持顶级（AAA/AA+），违约风险极低，是理想的保守型投资标的。 [18, 19, 20]</p>
+                    </div>
+                     <div class="card">
+                        <h3 class="text-xl font-bold text-slate-700 mb-3"><i class="fas fa-university mr-2"></i>货币政策轨迹</h3>
+                        <p class="text-slate-600">新西兰储备银行（RBNZ）经历了明显的利率周期，从危机前的8.25%高位，到疫情时的0.25%低点，再到近期为抗通胀加息至5.5%。政策直接影响短端利率，并通过预期传导至长端。 [22, 23, 24, 25, 26, 27]</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. 五年期保守型投资组合建议 -->
+            <section class="motion-reveal">
+                <h2 class="section-title"><i class="fas fa-briefcase mr-3 text-blue-500"></i>3. 五年期保守型投资组合建议 (1,000万纽元)</h2>
+                
+                <!-- 配置比例 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold text-slate-700 mb-6 text-center">3.1 配置比例与预期收益</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                        <div class="card border-t-4 border-blue-500">
+                            <div class="text-4xl font-extrabold text-blue-600">40%</div>
+                            <h4 class="font-bold text-lg mt-2">中长期名义国债 (5-10年)</h4>
+                            <p class="text-slate-500 mt-2">锁定 <span class="highlight">4.0-4.5%</span> 的稳定票息收入。</p>
+                        </div>
+                        <div class="card border-t-4 border-sky-500">
+                            <div class="text-4xl font-extrabold text-sky-600">20%</div>
+                            <h4 class="font-bold text-lg mt-2">长期通胀保值国债 (IIB)</h4>
+                            <p class="text-slate-500 mt-2">实际收益率约 <span class="highlight">2.5-3%</span>，有效对抗通胀侵蚀。</p>
+                        </div>
+                        <div class="card border-t-4 border-teal-500">
+                            <div class="text-4xl font-extrabold text-teal-600">40%</div>
+                            <h4 class="font-bold text-lg mt-2">短期政府债券/票据</h4>
+                            <p class="text-slate-500 mt-2">收益率约 <span class="highlight">3.5%</span>，提供高流动性与再投资弹性。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 text-center bg-blue-50 p-6 rounded-lg">
+                        <p class="text-lg text-slate-800">综合预期年化总收益率约为 <strong class="text-2xl text-blue-700">4.0%</strong> (基准情景下)，每年可获约 <strong class="text-xl text-blue-700">40万纽元</strong> 收益。</p>
+                    </div>
+                </div>
+
+                <!-- 风险评估 -->
+                <div class="mb-12">
+                    <h3 class="text-2xl font-semibold text-slate-700 mb-6 text-center">3.2 风险评估</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start"><i class="fas fa-tachometer-alt text-xl text-red-500 mr-4 mt-1"></i><div><strong class="text-slate-800">利率风险：</strong>主要风险来源，但通过40%短债配置有效降低了整体久期。若利率上行1%，组合市值预计下跌约5%。</div></li>
+                        <li class="flex items-start"><i class="fas fa-shield-alt text-xl text-green-600 mr-4 mt-1"></i><div><strong class="text-slate-800">信用和违约风险：</strong>几乎为零。组合全部投资于新西兰主权债券，信用评级为最高等级。</div></li>
+                        <li class="flex items-start"><i class="fas fa-water text-xl text-cyan-500 mr-4 mt-1"></i><div><strong class="text-slate-800">流动性风险：</strong>较低。国债市场流动性尚可，且有央行支持，正常市况下变现便利。</div></li>
+                        <li class="flex items-start"><i class="fas fa-dollar-sign text-xl text-amber-500 mr-4 mt-1"></i><div><strong class="text-slate-800">通胀风险：</strong>可控。通过20%通胀保值债配置，对冲了中长期通胀不确定性。</div></li>
+                    </ul>
+                </div>
+
+                <!-- 情景分析 -->
+                <div>
+                    <h3 class="text-2xl font-semibold text-slate-700 mb-6 text-center">3.3 情景分析 (5年期满年化回报率)</h3>
+                    <div class="card">
+                        <div class="text-center mb-4"><i class="fas fa-chart-pie text-3xl text-blue-500"></i></div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                            <div>
+                                <h4 class="font-bold text-red-600">情景A: 高通胀/紧缩</h4>
+                                <p class="text-2xl font-bold mt-1">~3.0%</p>
+                                <p class="text-sm text-slate-500">收益略降，但保持稳定正值。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-700">情景B: 温和/基准</h4>
+                                <p class="text-2xl font-bold mt-1">~4.0%</p>
+                                <p class="text-sm text-slate-500">回报稳定，符合预期目标。</p>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-green-600">情景C: 低通胀/宽松</h4>
+                                <p class="text-2xl font-bold mt-1">~6.0%</p>
+                                <p class="text-sm text-slate-500">享受资本利得，带来超额收益。</p>
+                            </div>
+                        </div>
+                        <p class="text-center mt-6 text-slate-600">情景分析表明，组合在各种宏观环境中均表现出良好的稳健性与抗风险能力。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 结语 -->
+            <footer class="motion-reveal mt-16">
+                <div class="bg-slate-800 text-white p-8 rounded-xl shadow-2xl text-center">
+                    <i class="fas fa-check-double text-4xl text-blue-400 mb-4"></i>
+                    <h2 class="text-3xl font-bold mb-4">结论</h2>
+                    <p class="text-lg text-slate-300 max-w-3xl mx-auto">
+                        建议的投资组合以新西兰国债为主体，能够满足保守型投资者对安全性、流动性和抗通胀稳定收益的要求。通过科学配置，有望在未来五年中获得约 <strong class="text-blue-300">4%</strong> 的年化收益，实现本金的保值增值。
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
